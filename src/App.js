@@ -11,19 +11,10 @@ import ProtectedRoute from './components/ProtectedRoute'
 import CartContext from './context/CartContext'
 
 import './App.css'
-// app component should contain cartList and corresponding methods to provide value to context
-// let's add cartList to state, so that whenever cartList is updated then the context will be updated through Provide Component
-// const App = () => (
-  
-// )
-// addtocart->addCartItem()->render()->Provider->context->caartListView folder->consumer
-// by using redirect it shows in url not-found without using path in route it didn't show the url as not-found 
 class App extends Component {
   state = {
     cartList: [],
   }
-
-  //   TODO: Add your code for remove all cart items, increment cart item quantity, decrement cart item quantity, remove cart item
 
   removeAllCartItems = () => {
     this.setState({cartList: []})
